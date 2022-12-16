@@ -22,7 +22,7 @@ export function activate(context: vscode.ExtensionContext) {
 			editor.edit(editBuilder => {
 				const currentText: string = document.getText();
 
-				// yep..
+				let newTxt: string = rightJustify(currentText)
 
 
 				let invalidRange = new vscode.Range(0, 0, document.lineCount /*intentionally missing the '-1' */, 0);

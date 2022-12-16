@@ -22,13 +22,13 @@ export function activate(context: vscode.ExtensionContext) {
 			editor.edit(editBuilder => {
 				const currentText: string = document.getText();
 
-				let newTxt: string = rightJustify(currentText)
+				let newTxt: string = rightJustify(currentText);
 
 
 				let invalidRange = new vscode.Range(0, 0, document.lineCount /*intentionally missing the '-1' */, 0);
 				let fullRange = document.validateRange(invalidRange);
 				editBuilder.replace(fullRange, newTxt);
-			})
+			});
 
 
 		}	

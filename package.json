@@ -10,14 +10,14 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:right-justify.helloWorld"
+    "onCommand:right-justify.rj_document"
   ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "right-justify.helloWorld",
-        "title": "Hello World"
+        "command": "right-justify.rj_document",
+        "title": "Right Justify Document"
       }
     ]
   },
